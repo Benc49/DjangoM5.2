@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action={% url 'lonesum' %}>
+    <label>
+    <p>A</p>
+    <input type="number" name = "num1">
+    </label>
+    <label>
+    <p>B</p>
+    <input type="number" name = "num2">
+    </label>
+    <label>
+    <p>C</p>
+    <input type="number" name = "num3">
+    </label>
+    <button>Enter</button>
+    </form>
+    <button></button>
+    {% if total is not None %}
+    <p>{{total}}</p>
+    {% endif %}
+  </body>
+</html>
